@@ -161,9 +161,9 @@ export const Dashboard: React.FC = () => {
   }, [invoices, products, expenses]);
 
   // --- CHART CONFIGURATIONS ---
-  const isDark = theme === 'dark';
-  const textColor = isDark ? '#a1a1aa' : '#71717a';
-  const gridColor = isDark ? 'rgba(63, 63, 70, 0.2)' : 'rgba(228, 228, 231, 0.6)';
+  const isDark = false;
+  const textColor = '#71717a';
+  const gridColor = 'rgba(228, 228, 231, 0.6)';
 
   // 1. Monthly Revenue Trend Chart Data (Last 6 Months)
   const lineChartData = useMemo(() => {
